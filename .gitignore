@@ -1,0 +1,10 @@
+# Virtual environments
+.venv/
+venv/
+
+# bytecode
+__pycache__
+
+# macos junk
+.DS_Store
+
