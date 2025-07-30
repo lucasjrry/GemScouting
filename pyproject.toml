@@ -1,12 +1,28 @@
 [project]
 name = "Gem-Scouting"
 version = "0.1.0"
-description = "Add your description here"
+description = "ML powered soccer scouting application"
 readme = "README.md"
 requires-python = ">=3.13"
 authors = [
   { name = "Lucas Jerry", email = "lucasjerry@gmail.com" },
 ]
 dependencies = [
+    "beautifulsoup4>=4.13.4",
     "flask>=3.1.1",
+    "pandas>=2.3.1",
+    "plotly>=6.2.0",
+    "pydantic>=2.11.7",
+    "requests>=2.32.4",
+    "scikit-learn>=1.7.1",
+    "sqlalchemy>=2.0.42",
+    "streamlit>=1.47.1",
+]
+
+[dependency-groups]
+dev = [
+    "black>=25.1.0",
+    "mypy>=1.17.0",
+    "pytest>=8.4.1",
+    "ruff>=0.12.7",
 ]
