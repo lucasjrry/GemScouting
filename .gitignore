@@ -2,9 +2,30 @@
 .venv/
 venv/
 
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Environment variables
+.env
+.env.*
+
+# Raw data files????
+# tbd
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Logs
+*.log
+
 # bytecode
 __pycache__
 
 # macos junk
 .DS_Store
 
+# IDE specific files
+.idea/
+.vscode/
