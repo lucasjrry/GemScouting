@@ -9,7 +9,7 @@ __pycache__/
 
 # Environment variables
 .env
-.env.*
+!.env.example 
 
 # Raw data files????
 # tbd

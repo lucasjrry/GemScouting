@@ -12,6 +12,7 @@ class Player(BaseModel):
     birth_date: date
     nationality: str
     position: str
+    picture: Optional[str] = None  # URL to player picture
 
 class PlayerPerformance(BaseModel):
     player_id: int
@@ -23,6 +24,21 @@ class PlayerPerformance(BaseModel):
     goals: int
     assists: int
     # ... other stats
+
+    shots: Optional[int] = 0
+    shots_on_target: Optional[int] = 0
+    expected_goals: Optional[float] = 0.0
+    expected_assists: Optional[float] = 0.0
+    passes_completed: Optional[int] = 0
+    pass_accuracy: Optional[float] = 0.0
+    tackles: Optional[int] = 0
+    interceptions: Optional[int] = 0
+
+    dribbles_completed: Optional[int] = 0
+    dribbles_attempted: Optional[int] = 0
+    duels_won: Optional[int] = 0
+    duels_lost: Optional[int] = 0
+
 
 class GemGrade(BaseModel):
     player_id: int
@@ -39,7 +55,6 @@ class MarketValue(BaseModel):
     season: str
     value: float
     update_date: date
-
 
 class Transfer(BaseModel):
     player_id: int
